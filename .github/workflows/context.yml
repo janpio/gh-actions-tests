@@ -35,3 +35,8 @@ jobs:
       - env:
           GITHUB_CONTEXT: ${{ toJSON(github.job) }}
         run: echo "$GITHUB_CONTEXT"
+
+  three:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "$GITHUB_JOB"
